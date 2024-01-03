@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;300;700&family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+   font-family: Noto Kufi Arabic;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(15, 53, 97);
+  }
+ 
+  
+  ul {
+    list-style: none;
+ 
+  }
+  
+  /* Header Start */
+header  {
+  height: 100vh;
+  background-color:rgb(196, 219, 248); 
+
+}
+ .navbar {
+  background-color:#fff;
+  border-bottom: 3px solid #cccccc; 
+  position: fixed;
+  z-index: 9999;
+  width:100%;
+  padding: 1.5rem 2rem ;
+
+}
+#home #logo{
+  font-weight: 600;
+  font-size: 24px;
+}
+ .navbar nav{
+  display: flex;
+  margin:auto;
+  justify-content:space-between;
+  align-items:center;
+  max-width: 1100px;
+
+}
+
+
+ .navbar nav ul{
+  display: flex;
+  justify-content:space-center;
+  align-items:flex-start;
+
+}
+ .navbar nav ul a{
+margin:0 15px;
+font-weight: 600;
+
+}
+
+.header-content{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1100px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+
+  padding: 5rem 2rem;
+}
+.header-content img{
+max-width: 450px;
+
+}
+.header-text p{
+  font-size: 24px;
+  font-weight: 500;
+}
+.header-text h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+/*menu*/
+
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.btn-menu :hover {
+  background: #bce4d1;
+}
+
+
+
+.primary-text {
+  color: #e96711;
+}
+#menu {
+  background: rgb(151, 191, 236);
+  padding: 5rem 2rem;
+}
+
+
+#footer {
+  background-color: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18 px;
+}
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  #menu .menu-items {
+    display: block;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+    }
+
+    header .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p {
+      font-size: 14px;
+    }
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+  
+
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+}
